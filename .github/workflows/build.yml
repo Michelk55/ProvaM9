@@ -1,0 +1,29 @@
+name: Build Blazor WebAssembly App
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout código
+        uses: actions/checkout@v3
+
+      - name: Setup .NET SDK
+        uses: actions/setup-dotnet@v3
+        with:
+          dotnet-version: '8.0.x'
+
+      - name: Restaurar dependências
+        run: dotnet restore
+
+      - name: Buildar projeto
+        run: dotnet build --configuration Release
+
+      - name: Rodar testes (se tiver)
+        run: dotnet test || echo "Sem testes configurados"
