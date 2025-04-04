@@ -1,7 +1,22 @@
 # Currículo Interativo - ProvaM9
 
-Projeto feito em Blazor WebAssembly como parte da prova.
+Este projeto foi desenvolvido como parte da prova utilizando **.NET Blazor WebAssembly**.
 
-A página principal mostra meu nome, uma bio rápida, algumas habilidades e links pro LinkedIn e GitHub. Usei CSS simples pra dar uma organizada no visual.
+A página principal apresenta:
 
-O repositório tá com GitHub Actions configurado pra rodar o build automático quando tem push.
+- Nome e biografia.
+- Resumo de habilidades e experiências.
+- Links para LinkedIn e GitHub.
+
+## Estrutura do projeto
+
+- `Index.razor`: Página principal com o conteúdo do currículo.
+- `estilo.css`: Estilos personalizados para a página.
+- `App.razor`: Componente de roteamento do Blazor.
+- `Program.cs`: Configuração do projeto Blazor.
+- `build.yml`: Arquivo de integração contínua (CI) com GitHub Actions.
+
+## Links
+
+- LinkedIn: [https://www.linkedin.com/in/michel-khafif/](https://www.linkedin.com/in/michel-khafif/)
+- GitHub: [https://github.com/Michelk55](https://github.com/Michelk55)
